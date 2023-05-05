@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    
+    <link rel="stylesheet" href="index.css">
+</head>
+<body dir="rtl">
+    <div class="marquee1">
+    <marquee behavior="scroll" direction="right" scrollamount="6">
+        <span>  أهلاً و سهلاً بكم في الموقع الشخصي لوفاء جراح مروح عبدات</span>
+    </marquee></div>
+    <div class="wrapper">
+        <form method="post" action="main.html" target="_blank">
+
+        <div class="title">
+            نموذج التسجيل في الموقع
+        </div>
+
+        <div class="form">
+
+            <div class="input_field">
+                <label>الاسم الأول</label>
+                <input type="text" class="input" name="firstName" 
+                required autofocus placeholder="هذا الحقل اجباري">
+            </div>
+
+            <div class="input_field">
+                <label>الاسم الأخير</label>
+                <input type="text" class="input" name="lastName">
+            </div>
+
+            <div class="input_field">
+                <label>كلمة المرور</label>
+                <input type="password" class="input" maxlength="12"
+                id="password" required placeholder="هذا الحقل اجباري">
+            </div>
+
+            <div class="input_field">
+                <label>تأكيد كلمة المرور</label>
+                <input type="password" class="input" maxlength="12" 
+                id= "ConfirmPass" required placeholder="هذا الحقل اجباري">
+            </div>
+
+            <div class="input_field">
+                <label>الجنس</label>
+                <div class="custom_select">
+                    <select>
+                        <option value="male">اخْتَر</option>
+                        <option value="male">ذكر</option>
+                        <option value="female">أنثى</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input_field">
+                <label>البريد الالكتروني</label>
+                <input type="email" class="input">
+            </div>
+
+            <div class="input_field">
+                <label>رقم الهاتف</label>
+                <input type="tel" class="input">
+            </div>
+            
+            <div class="input_field">
+                <label>تاريخ الميلاد </label>
+                <input type="date" value="1990-11-15" class="input">
+            </div>
+
+            <div class="input_field">
+                <label>العنوان</label>
+                <textarea class="textarea"></textarea>
+            </div>
+
+            <div class="input_field">
+                <label>الصورة الشخصية </label>
+                <input type="file" accept="image/*" class="input">
+            </div>            
+
+            <div class="input_field terms">
+                <label class="check">
+                <input type="checkbox" id="chk">
+                <span class="checkmark"></span>
+                </label>
+                <p>أوافق على الشروط </p>
+            </div>
+
+            <div class="input_field">
+                <input type="submit" value="تسجيل الدخول" class="btn" 
+                name="submit" onclick="ValidatePass()">
+            </div>
+
+        </div>
+    </form>
+    </div>
+
+<script> 
+    
+function ValidatePass(){
+    let password = document.getElementById("password").value;
+    let ConfirmPass = document.getElementById("ConfirmPass").value;
+    console.log(password,ConfirmPass);
+
+    if(password.length != 0){
+        if(password == ConfirmPass){
+            alert("كلمتي المرور متطابقتين");
+        }
+        else{
+            alert("كلمتي المرور غير متطابقتين");
+        }
+    }
+    
+}
+</script>   
+</body>
+</html>

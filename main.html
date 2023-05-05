@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- the following line supports non-english letters and special characters-->
+    <meta charset="UTF-8">
+
+    <!-- the following line gives name of the author of the page-->
+    <meta name="author" content="wafa jarrah meraweh abdat"/>
+    <!-- the following line gives information about the last time the document was updated-->
+    <meta name="revised" content="28/4/2023"/>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- the following line gives keywords important fro the search engines-->
+    <meta name="keywords" content="wafa, abdat, wafa abdat"/>
+    <!-- the following line gives a summarized description of the page, that is
+    neccessary for search engines-->
+    <meta name="description" content="autobiography of wafa abdat"/>
+    <title> الصفحة الرئيسية </title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="main">
+     <nav>
+        <div class="nav_links">
+            <ul>
+                <li>
+                    <button type="button" id="btn1"> المعلومات الشخصية </button>
+                </li> 
+
+                <li>
+                    <button type="button" id="btn2"> المؤهلات العلمية </button>
+                </li> 
+
+                <li>
+                    <button type="button" id="btn3">اللغات</button>
+                </li> 
+
+                <li>
+                    <button type="button" id="btn4"> جامعتي </button>
+                </li>  
+            </ul>
+        </div>
+     </nav>
+     <div class="information">
+        <img src="images/icon.png" class="programmer"> 
+
+        <dialog open="true" class="curriculum" dir="rtl">
+            <p>انقر على الصورة لتحميل السيرة الذاتية باللغة العربية</p>
+            <a href="files/CV.pdf" target="_blank">
+                <img src="images/icon9.jpg" title="انقر هنا"/></a>    
+        </dialog>
+
+        <dialog open="true" class="curriculum1" dir="rtl">
+            <p>انقر على الصورة لتحميل السيرة الذاتية باللغة الانجليزية</p>
+            <a href="files/wafaAbdatResume.pdf" target="_blank">
+                <img src="images/icon9.jpg" title="انقر هنا"/></a>
+        </dialog>
+
+        <div id="circle" >
+            <h2 class="text1"> المراجع و الدورات التدريبية </h2>
+            <div class="feature one" dir="ltr">
+                <a href="https://youtube.com/playlist?list=PLMTdZ61eBnyrnapIyOphXAkIcR5DDOGkz"
+                target="_blank">
+                <img src="images/p1.png" title="HTML انقر هنا لعرض دورة تعلم لغة ">
+                </a>
+                <div>
+                    <h2>HTML</h2>
+                    <p>&quot; HyperText Markup Language &quot; </p>
+                </div> 
+            </div>
+
+            <div class="feature two" dir="rtl">
+                <img src="images/p4.png">
+                <div>
+                    <h2> المقرر الدراسي </h2>
+                    <p><q>تقنية تصميم صفحات الويب</q> </p>
+                </div>
+            </div>
+            <div class="feature three" dir="ltr">
+                <a href="https://youtube.com/playlist?list=PLMTdZ61eBnyp1nMM8mGRzpwuu6FNxFy0D"
+                target="_blank">
+                <img src="images/javascript.png" title="JS انقر هنا لعرض دورة تعلم لغة ">
+                </a>
+                <div>
+                    <h2>JS</h2>
+                    <p>&quot;JavaScript&quot; </p>
+                </div>
+            </div>
+            <div class="feature four" dir="ltr">
+              <a href = "https://youtube.com/playlist?list=PLMTdZ61eBnyoxjc9Prw0uhwgp6YZ2-_sg" target="_blank">
+                <img src="images/p3.png" title="CSS انقر هنا لعرض دورة تعلم لغة ">
+              </a>
+                <div>
+                    <h2>CSS </h2>
+                    <p>&quot;Cascading Style Sheets&quot; </p>
+                </div>
+            </div>
+        </div>
+     </div>   
+     </div>
+    </div> 
+
+    <script>
+        document.getElementById("btn1").addEventListener("click", () =>{
+            window.open("personalinformation.html");
+        })
+
+        document.getElementById("btn2").addEventListener("click", () =>{
+            window.open("studies.html");
+        })
+
+        document.getElementById("btn3").addEventListener("click", () =>{
+            window.open("languages.html");
+        })
+
+        document.getElementById("btn4").addEventListener("click", () =>{
+            window.open("university.html");
+        })
+
+    </script>  
+</body>
+</html>
+
